@@ -18,8 +18,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 # Labels to add to all resources and selectors.
-transformers:
-- global-labels.yaml
+commonLabels:
+  app: camel-k
 
 resources:
 - ../manager
@@ -34,6 +34,6 @@ resources:
 patchesStrategicMerge:
 - patch-delete-user-cluster-role.yaml
 images:
-- name: registry-proxy.engineering.redhat.com/rh-osbs/integration-camel-k-rhel8-operator
-  newName: registry-proxy.engineering.redhat.com/rh-osbs/integration-camel-k-rhel8-operator
-  newTag: 2.2.0
+- name: docker.io/apache/camel-k
+  newName: docker.io/apache/camel-k
+  newTag: 2.3.0-SNAPSHOT
