@@ -59,5 +59,23 @@ limitations under the License.
             <mirrorOf>central</mirrorOf>
             <url>_local-maven-proxy_</url>
         </mirror>
+        <mirror>
+            <id>local-redhat.ga-mirror</id>
+            <name>local-redhat.ga-mirror</name>
+            <mirrorOf>redhat.ga</mirrorOf>
+            <url>_local-maven-proxy_</url>
+        </mirror>
+        <mirror>
+            <id>local-jboss.ea-mirror</id>
+            <name>local-jboss.ea-mirror</name>
+            <mirrorOf>jboss.ea</mirrorOf>
+            <url>_local-maven-proxy_</url>
+        </mirror>
+        <mirror>
+            <id>local-redhat.ea-mirror</id>
+            <name>local-redhat.ea-mirror</name>
+            <mirrorOf>redhat.ea</mirrorOf>
+            <url>_local-maven-proxy_</url>
+        </mirror>      
     </mirrors>
 </settings>
