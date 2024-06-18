@@ -476,7 +476,7 @@ func Kubectl(args ...string) *exec.Cmd {
 }
 
 func KubectlWithContext(args ...string) *exec.Cmd {
-	return exec.Command("kubectl", args...)
+	return exec.Command("oc", args...)
 }
 
 // =============================================================================

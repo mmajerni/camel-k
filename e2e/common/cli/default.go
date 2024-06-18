@@ -21,9 +21,8 @@ limitations under the License.
 package cli
 
 import (
-	"github.com/apache/camel-k/v2/e2e/support"
-	"github.com/apache/camel-k/v2/pkg/platform"
+	"os"
 )
 
-var operatorNS = support.TestDefaultNamespace + "-cli"
-var operatorID = platform.DefaultPlatformName + "-cli"
+var operatorNS = os.Getenv("CAMEL_K_GLOBAL_OPERATOR_NS")
+var operatorID = os.Getenv("CAMEL_K_OPERATOR_ID")

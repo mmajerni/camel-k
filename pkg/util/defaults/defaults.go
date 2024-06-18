@@ -26,7 +26,7 @@ const (
 	Version = "2.3.0"
 
 	// DefaultRuntimeVersion --
-	DefaultRuntimeVersion = "3.8.1"
+	DefaultRuntimeVersion = "3.8.1.redhat-00015"
 
 	// baseImage --
 	baseImage = "adoptopenjdk/openjdk11:slim"
